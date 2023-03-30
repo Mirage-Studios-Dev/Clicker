@@ -325,12 +325,12 @@ void gui::Render() noexcept
 
 		float posx2 = (WIDTH - 200) / 2.0f;
 		ImGui::SetCursorPosX(posx2);
-		ImGui::SliderInt("CPS", &cps, 1, 10, "%d", ImGuiSliderFlags_ClampOnInput);
+		ImGui::SliderInt("CPS", &cps, 1, 12, "%d", ImGuiSliderFlags_ClampOnInput);
 
 		ImGui::SetCursorPosX(posx2);
 		
 		if (ImGui::Button("Disclaimer")) {
-			const char* url = "https://github.com/PvPLab";
+			const char* url = "https://github.com/PvPLab/Clicker";
 			ShellExecute(NULL, "open", url, NULL, NULL, SW_SHOWNORMAL);
 		}
 
