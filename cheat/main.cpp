@@ -26,6 +26,8 @@ void clicker() {
 			enabled = !enabled;
 			Sleep(400);
 		}
+
+		Sleep(1);
 	}
 }
 
@@ -35,7 +37,6 @@ int __stdcall wWinMain(
 	PWSTR arguments,
 	int commandShow)
 {
-	// create gui
 	gui::CreateHWindow("PvPLab Clicker");
 	gui::CreateDevice();
 	gui::CreateImGui();
